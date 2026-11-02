@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patchwork — Local Upcycling Clothing Brand</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" class="sr-only">
+
+  <header>
+    <a href="#top" class="logo">patch/work</a>
+    <input type="checkbox" id="menu-toggle" class="sr-only">
+    <label for="menu-toggle" class="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#philosophy">Brand Philosophy</a></li>
+        <li><a href="#process">Upcycling Process</a></li>
+        <li><a href="#stores">Stores</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="images/hero.webp" alt="Model wearing a recycled denim coat in a studio" width="588" height="620">
+      <h1 id="hero-title">Unique Oversized Clothing from Recycled Materials</h1>
+      <p>The new collection is cut from old denim, wool coats and cotton sheets collected in our city.</p>
+      <a href="#collections" class="cta">See the lookbook</a>
+    </section>
+
+    <section id="collections" class="catalog" aria-labelledby="collections-title">
+      <h2 id="collections-title">New collection</h2>
+      <article>
+        <img src="images/coat.webp" alt="Denim patch coat on a hanger" width="384" height="412" loading="lazy">
+        <h3>Denim patch coat</h3>
+        <p class="price">45 000 ₸</p>
+        <p>Size: oversized, fits S–XL</p>
+        <p>Material: 80% recycled denim, 20% cotton</p>
+        <button type="button">Buy</button>
+      </article>
+      <article>
+        <img src="images/wool.webp" alt="Wool blanket jacket on a hanger" width="384" height="412" loading="lazy">
+        <h3>Wool blanket jacket</h3>
+        <p class="price">52 000 ₸</p>
+        <p>Size: oversized, fits M–XXL</p>
+        <p>Material: 100% recycled wool</p>
+        <button type="button">Buy</button>
+      </article>
+      <article>
+        <img src="images/shirt.webp" alt="Sheet-cotton shirt on a hanger" width="384" height="412" loading="lazy">
+        <h3>Sheet-cotton shirt</h3>
+        <p class="price">28 000 ₸</p>
+        <p>Size: oversized, fits S–L</p>
+        <p>Material: 100% recycled cotton</p>
+        <button type="button">Buy</button>
+      </article>
+      <article>
+        <img src="images/trousers.webp" alt="Patchwork trousers on a hanger" width="384" height="412" loading="lazy">
+        <h3>Patchwork trousers</h3>
+        <p class="price">34 000 ₸</p>
+        <p>Size: wide cut, fits S–XL</p>
+        <p>Material: 60% denim, 40% corduroy</p>
+        <button type="button">Buy</button>
+      </article>
+      <article>
+        <img src="images/vest.webp" alt="Quilted vest on a hanger" width="384" height="412" loading="lazy">
+        <h3>Quilted vest</h3>
+        <p class="price">30 000 ₸</p>
+        <p>Size: oversized, fits M–XL</p>
+        <p>Material: recycled polyester fill, cotton shell</p>
+        <button type="button">Buy</button>
+      </article>
+      <article>
+        <img src="images/tote.webp" alt="Scrap tote bag on a hook" width="384" height="412" loading="lazy">
+        <h3>Scrap tote bag</h3>
+        <p class="price">12 000 ₸</p>
+        <p>Size: one size</p>
+        <p>Material: leftover canvas and denim</p>
+        <button type="button">Buy</button>
+      </article>
+    </section>
+
+    <section id="philosophy" class="text-block" aria-labelledby="philosophy-title">
+      <h2 id="philosophy-title">Brand philosophy</h2>
+      <p>Every year tons of clothes end up in landfills. We give them a second life: each piece is made by hand from old garments, so no two are the same.</p>
+    </section>
+
+    <section id="process" class="text-block" aria-labelledby="process-title">
+      <h2 id="process-title">Upcycling process</h2>
+      <p>We collect old clothes, sort them by material, wash them, cut them into panels and sew them into new designs. Nothing is dyed with new chemicals.</p>
+    </section>
+
+    <section id="stores" class="text-block" aria-labelledby="stores-title">
+      <h2 id="stores-title">Stores</h2>
+      <p>Visit our studio and pop-up shops in the city, or order online with delivery.</p>
+    </section>
+
+    <section class="feedback" aria-labelledby="form-title">
+      <h2 id="form-title">Give us your old clothes</h2>
+      <form action="#" method="get">
+        <label>Item specification
+          <textarea name="item" rows="4" required minlength="10" placeholder="e.g. 3 old denim jackets, cotton, good condition"></textarea>
+        </label>
+        <label>Shipping address
+          <input type="text" name="address" required minlength="5" placeholder="City, street, house">
+        </label>
+        <label>Contact phone
+          <input type="tel" name="phone" required pattern="[0-9+ ()\-]{10,}" placeholder="+7 777 123 45 67">
+        </label>
+        <label>Email
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+        <button type="submit">Send request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Our manifesto</h2>
+      <p>Buy less. Repair more. Give old clothes a second life.</p>
+    </section>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#philosophy">Brand Philosophy</a></li>
+        <li><a href="#process">Upcycling Process</a></li>
+        <li><a href="#stores">Stores</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://instagram.com">Instagram</a></li>
+        <li><a href="https://t.me">Telegram</a></li>
+        <li><a href="https://tiktok.com">TikTok</a></li>
+      </ul>
+    </nav>
+    <label for="theme-toggle" class="theme-switch">Switch light / dark theme</label>
+    <p><small>© 2026 patch/work. All rights reserved. Privacy policy · Terms of sale.</small></p>
+  </footer>
+</body>
+</html>
